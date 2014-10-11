@@ -1,16 +1,70 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--Kathy Kosinski-->
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".AddActivity">
+    android:orientation="horizontal"
+    android:rowCount="3"
+    android:columnCount="3"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!--sound button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/soundButton"
+        android:onClick="addSound"
+        android:layout_row="0"
+        android:layout_column="0" />
 
-</RelativeLayout>
+    <!--camera button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/photoButton"
+        android:onClick="addPicture"
+        android:layout_row="0"
+        android:layout_column="1" />
+    <!-- android:src="@drawable/cameraButton" -->
+
+
+    <!--link button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/linkButton"
+        android:onClick="addLink"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+    <!--text button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/textButton"
+        android:onClick="addText"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <!--movie button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/movieButton"
+        android:onClick="addMovie"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+    <!--quote button-->
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:id= "@+id/quoteButton"
+        android:onClick="addQuote"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+</GridLayout>
+
+

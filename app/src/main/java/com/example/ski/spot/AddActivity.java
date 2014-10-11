@@ -1,9 +1,12 @@
+//Kathy Kosinski
 package com.example.ski.spot;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 
 
 public class AddActivity extends Activity {
@@ -32,5 +35,23 @@ public class AddActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void addSound(View view) {
+        //open new activity
+    }
+    public void addPicture(View view) {
+        //open a new activity
+    }
+    public void addLink(View view) {
+        //open a new activity
+    }
+    public void addText(View view) {
+        //open a new activity
+    }
+    public void addQuote(View view) {
+        //open a new activity
+    }
+    public void addMovie(View view) {
+        //open a new activity
     }
 }
