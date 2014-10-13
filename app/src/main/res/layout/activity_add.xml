@@ -25,7 +25,8 @@
         android:id= "@+id/photoButton"
         android:onClick="addPicture"
         android:layout_row="0"
-        android:layout_column="1" />
+        android:layout_column="1"
+        android:src="@drawable/ic_camera"/>
     <!-- android:src="@drawable/cameraButton" -->
 
 
@@ -46,7 +47,7 @@
         android:onClick="addText"
         android:layout_row="1"
         android:layout_column="0"
-        android:src="@drawable/ic_action_edit"/>
+        android:src="@drawable/ic_pen"/>
 
     <!--movie button-->
     <ImageButton
@@ -55,7 +56,8 @@
         android:id= "@+id/movieButton"
         android:onClick="addMovie"
         android:layout_row="1"
-        android:layout_column="1" />
+        android:layout_column="1"
+        android:src="@drawable/ic_film"/>
 
     <!--quote button-->
     <ImageButton
@@ -64,7 +66,8 @@
         android:id= "@+id/quoteButton"
         android:onClick="addQuote"
         android:layout_row="1"
-        android:layout_column="2" />
+        android:layout_column="2"
+        android:src="@drawable/ic_chat"/>
 
 </GridLayout>
 

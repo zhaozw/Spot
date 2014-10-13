@@ -20,7 +20,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:text="@string/send"
+        android:text="@string/submit"
         android:onClick="submitText"/>
 
 
