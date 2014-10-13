@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
+import android.content.Intent;
+
 
 
 
@@ -18,6 +20,8 @@ public class AddText extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_text);
+        //Intent intent= getIntent();
+
     }
 
 

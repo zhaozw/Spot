@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.content.Intent;
 
 
 
@@ -46,7 +47,8 @@ public class AddActivity extends Activity {
         //open a new activity
     }
     public void addText(View view) {
-        //open a new activity
+        Intent intent = new Intent(this, AddText.class);
+        startActivity(intent);
     }
     public void addQuote(View view) {
         //open a new activity
