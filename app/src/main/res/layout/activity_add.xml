@@ -16,7 +16,8 @@
         android:id= "@+id/soundButton"
         android:onClick="addSound"
         android:layout_row="0"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:src="@drawable/ic_microphone"/>
 
     <!--camera button-->
     <ImageButton
@@ -37,7 +38,8 @@
         android:id= "@+id/linkButton"
         android:onClick="addLink"
         android:layout_row="0"
-        android:layout_column="2" />
+        android:layout_column="2"
+        android:src="@drawable/ic_link"/>
 
     <!--text button-->
     <ImageButton
