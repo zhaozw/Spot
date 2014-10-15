@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.LoginActivity" />
         </activity>
+        <activity
+            android:name=".AddPhoto"
+            android:label="@string/title_activity_add_photo"
+            android:parentActivityName=".AddActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.AddActivity" />
+        </activity>
     </application>
 
 </manifest>

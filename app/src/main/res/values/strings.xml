@@ -11,5 +11,6 @@
     <string name="title_activity_about">About</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_add_photo">AddPhoto</string>
 
 </resources>
