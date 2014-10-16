@@ -1,3 +1,4 @@
+//Jing Zhang
 package com.example.ski.spot;
 
 import android.app.Activity;
