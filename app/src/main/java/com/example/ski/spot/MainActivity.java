@@ -12,6 +12,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //find GPS location
+        //IF there are posts from this location, display them
+        //ELSE show "you are the first!"
+
     }
 
 
