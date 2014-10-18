@@ -33,4 +33,14 @@ public class Settings extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void onToggleClicked(View view) {
+        // Is the toggle on?
+        boolean on = ((toggleButton) view).isChecked();
+
+        if (on) {
+            // do not login and keep anonymous
+        } else {
+            // re-direct to login page
+        }
+    }
 }
