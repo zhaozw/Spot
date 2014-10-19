@@ -19,5 +19,6 @@
     <string name="title_activity_add_link">AddLink</string>
     <string name="URL">Enter your URL here</string>
     <string name="first_visitor">You are the first person to SPOT this location! Put this spot on the map:</string>
-
+    <string name="icons_attribution">Icons designed by Cris Dobbins from the Noun Project.</string>
+    <string name="icon_link">Find the icons at http://www.thenounproject.com/crisdobbins"</string>
 </resources>

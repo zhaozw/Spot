@@ -1,5 +1,5 @@
 <!--Kathy Kosinski-->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,14 +10,16 @@
     tools:context="com.example.ski.spot.About">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="@string/icons_attribution"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <!-- Do a multi line text view
-    Icons designed by
-    <a href="http://www.thenounproject.com/crisdobbins">Cris Dobbins</a>
-    from the
-    <a href="http://www.thenounproject.com">Noun Project</a>
-    -->
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_link"
+        android:orientation="horizontal"
+        />
 
-</RelativeLayout>
+</LinearLayout>

@@ -27,7 +27,8 @@
         android:src="@drawable/ic_plus"
         android:id="@+id/add_button"
         android:scaleType="fitCenter"
-        android:layout_below="@+id/firstVisitor" />
+        android:layout_below="@+id/firstVisitor"
+        android:background="@android:color/transparent" />
 
 
 
