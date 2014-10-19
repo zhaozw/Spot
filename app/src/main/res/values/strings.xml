@@ -18,5 +18,6 @@
     <string name="title_activity_add_video">AddVideo</string>
     <string name="title_activity_add_link">AddLink</string>
     <string name="URL">Enter your URL here</string>
+    <string name="first_visitor">You are the first person to SPOT this location! Put this spot on the map:</string>
 
 </resources>
