@@ -9,7 +9,7 @@ package com.example.ski.spot;
  * <uses-permission android:name="android.permission.RECORD_AUDIO" />
  *
  */
-
+//Kathy Kosinski
 import android.app.Activity;
 import android.widget.LinearLayout;
 import android.os.Bundle;
