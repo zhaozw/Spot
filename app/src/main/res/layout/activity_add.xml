@@ -1,76 +1,72 @@
 <!--Kathy Kosinski-->
 
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:rowCount="3"
-    android:columnCount="3"
-    android:layout_centerInParent="true"
-    android:layout_gravity="center">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--sound button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/soundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundButton"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/ic_launcher"
         android:onClick="addSound"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:src="@drawable/ic_microphone"/>
-
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <!--camera button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/photoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photoButton"
         android:onClick="addPhoto"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:src="@drawable/ic_camera"/>
-
-
+        android:layout_alignBottom="@+id/soundButton"
+        android:layout_toRightOf="@+id/soundButton"
+        android:layout_toEndOf="@+id/soundButton"
+        android:src="@drawable/ic_launcher" />
 
     <!--link button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/linkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkButton"
         android:onClick="addLink"
-        android:layout_row="0"
-        android:layout_column="2"
-        android:src="@drawable/ic_link"/>
-
+        android:layout_alignBottom="@+id/photoButton"
+        android:layout_toRightOf="@+id/photoButton"
+        android:layout_toEndOf="@+id/photoButton"
+        android:src="@drawable/ic_launcher" />
     <!--text button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textButton"
+        android:src="@drawable/ic_launcher"
         android:onClick="addText"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:src="@drawable/ic_pen"/>
-
+        android:layout_below="@+id/soundButton"
+        android:layout_alignLeft="@+id/soundButton"
+        android:layout_alignStart="@+id/soundButton" />
     <!--movie button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/movieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieButton"
+        android:layout_below="@+id/soundButton"
+        android:layout_toRightOf="@+id/soundButton"
+        android:layout_toEndOf="@+id/soundButton"
         android:onClick="addMovie"
-        android:layout_row="1"
-        android:layout_column="1"
-        android:src="@drawable/ic_film"/>
-
+        android:src="@drawable/ic_launcher" />
     <!--quote button-->
     <ImageButton
-        android:layout_width="113dp"
-        android:layout_height="113dp"
-        android:id= "@+id/quoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quoteButton"
+        android:layout_below="@+id/linkButton"
         android:onClick="addQuote"
-        android:layout_row="1"
-        android:layout_column="2"
-        android:src="@drawable/ic_chat"/>
-
-</GridLayout>
-
-
+        android:layout_toRightOf="@+id/movieButton"
+        android:layout_toEndOf="@+id/movieButton"
+        android:src="@drawable/ic_launcher" />
+</RelativeLayout>
