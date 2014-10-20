@@ -1,3 +1,4 @@
+//Kathy Kosinski
 package com.example.ski.spot;
 
 import android.app.Activity;
@@ -35,12 +36,23 @@ public class MainActivity extends Activity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
         return super.onOptionsItemSelected(item);
+      /*  switch (item.getItemId()) {
+            /*case R.id.action_about:
+                Intent intent= new Intent(this, About.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_settings:
+                Intent intent1 = new Intent(this, Settings.class);
+                startActivity(intent1);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        } */
+
     }
+
+
     public void addActivity(View view) {
         Intent intent = new Intent(this, AddActivity.class);
         startActivity(intent);
