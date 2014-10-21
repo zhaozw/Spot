@@ -5,20 +5,23 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#ffa7ccff">
+    android:background="#3e453d">
 
     <!--sound button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/soundButton"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="179dp"
         android:src="@drawable/ic_launcher"
         android:onClick="addSound"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="111dp"
+        android:background="@android:color/transparent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp" />
     <!--camera button-->
     <ImageButton
         android:layout_width="wrap_content"
@@ -28,7 +31,9 @@
         android:layout_alignBottom="@+id/soundButton"
         android:layout_toRightOf="@+id/soundButton"
         android:layout_toEndOf="@+id/soundButton"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_roundcam2"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp" />
 
     <!--link button-->
     <ImageButton
@@ -39,7 +44,9 @@
         android:layout_alignBottom="@+id/photoButton"
         android:layout_toRightOf="@+id/photoButton"
         android:layout_toEndOf="@+id/photoButton"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp" />
     <!--text button-->
     <ImageButton
         android:layout_width="wrap_content"
@@ -49,7 +56,9 @@
         android:onClick="addText"
         android:layout_below="@+id/soundButton"
         android:layout_alignLeft="@+id/soundButton"
-        android:layout_alignStart="@+id/soundButton" />
+        android:layout_alignStart="@+id/soundButton"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp" />
     <!--movie button-->
     <ImageButton
         android:layout_width="wrap_content"
@@ -59,7 +68,9 @@
         android:layout_toRightOf="@+id/soundButton"
         android:layout_toEndOf="@+id/soundButton"
         android:onClick="addMovie"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp" />
     <!--quote button-->
     <ImageButton
         android:layout_width="wrap_content"
@@ -69,5 +80,7 @@
         android:onClick="addQuote"
         android:layout_toRightOf="@+id/movieButton"
         android:layout_toEndOf="@+id/movieButton"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp" />
 </RelativeLayout>
