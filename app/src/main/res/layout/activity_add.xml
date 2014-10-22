@@ -69,7 +69,7 @@
         android:id="@+id/movieButton"
         android:layout_toEndOf="@+id/soundButton"
         android:onClick="addMovie"
-        android:src="@drawable/ic_vidround"
+        android:src="@drawable/ic_movieround"
         android:background="@android:color/transparent"
         android:layout_alignTop="@+id/quoteButton"
         android:layout_centerHorizontal="true"
