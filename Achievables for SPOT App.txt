@@ -1,0 +1,11 @@
+Achievables for SPOT App
+1. Our app will be able to pin point the user’s GPS location and determine whether to provide a list of “spots” or ask to “be the first to spot!”
+2. Our app will be able to provide anonymous function that by the single use of a “toggle button”, users login info will not be shown to fellows;
+3. Our app will be able to preview multimedia contents prior to posting, such as videos/sounds/images.
+
+
+Our achievables for the alpha release:
+1. Make the action bars functioning when visible and disappear when not.
+2. General layout, make the purpose of each page clear for each activity
+3. Pseudocode out the pages we aren’t ready to code
+4. Create “false post” activities
