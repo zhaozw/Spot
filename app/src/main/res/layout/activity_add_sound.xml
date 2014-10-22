@@ -1,4 +1,4 @@
-<!--Kathy Kosinski-->
+<!--Sylvie Zhang-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,9 +9,27 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.ski.spot.AddSound">
 
-    <TextView
-        android:text="@string/hello_world"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:paddingTop="50dp"/>
+    <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/accessSoundButton"
+        android:onClick="accessSound"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_micround"
+        android:background="@android:color/transparent"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/submit"
+        android:onClick="submitText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/accessSoundButton"/>
+
 
 </RelativeLayout>
