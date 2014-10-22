@@ -36,14 +36,23 @@ public class Settings extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+<<<<<<< Updated upstream
     /*public void onToggleClicked(View view) {
+=======
+    //public void onToggleClicked(View view) {
+>>>>>>> Stashed changes
         // Is the toggle on?
-        boolean on = ((toggleButton) view).isChecked();
+    //    boolean on = ((toggleButton) view).isChecked();
 
-        if (on) {
+    //    if (on) {
             // do not login and keep anonymous
-        } else {
+    //    } else {
             // re-direct to login page
+<<<<<<< Updated upstream
         }
     }*/
+=======
+      //  }
+  //  }
+>>>>>>> Stashed changes
 }
