@@ -1,5 +1,5 @@
 <!-- Jing Zhang-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -7,10 +7,13 @@
     android:orientation="vertical" >
 
     <EditText
+        android:id="@+id/quoteTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/title" />
     <EditText
+        android:id="@+id/enterQuote"
+        android:layout_below="@id/quoteTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -21,7 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:text="@string/submit"
-        android:onClick="submitText"/>
+        android:onClick="submitText"
+        android:layout_below="@id/enterQuote"
+        android:layout_alignParentRight="true"/>
 
 
-</LinearLayout>
+</RelativeLayout>
