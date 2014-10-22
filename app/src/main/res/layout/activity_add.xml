@@ -61,19 +61,19 @@
         android:layout_alignLeft="@+id/soundButton"
         android:layout_alignStart="@+id/soundButton"
         android:background="@android:color/transparent"
-        android:layout_margin="3dp" />
+        android:layout_margin="5dp" />
     <!--movie button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/movieButton"
-        android:layout_below="@+id/soundButton"
-        android:layout_toRightOf="@+id/soundButton"
         android:layout_toEndOf="@+id/soundButton"
         android:onClick="addMovie"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/ic_vidround"
         android:background="@android:color/transparent"
-        android:layout_margin="3dp" />
+        android:layout_alignTop="@+id/quoteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
     <!--quote button-->
     <ImageButton
         android:layout_width="wrap_content"
@@ -85,5 +85,5 @@
         android:layout_toEndOf="@+id/movieButton"
         android:src="@drawable/ic_launcher"
         android:background="@android:color/transparent"
-        android:layout_margin="3dp" />
+        android:layout_margin="5dp" />
 </RelativeLayout>

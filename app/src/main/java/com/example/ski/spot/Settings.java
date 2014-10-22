@@ -1,9 +1,12 @@
+//Sylvie Zhang
 package com.example.ski.spot;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 
 
 public class Settings extends Activity {
@@ -33,7 +36,7 @@ public class Settings extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void onToggleClicked(View view) {
+    /*public void onToggleClicked(View view) {
         // Is the toggle on?
         boolean on = ((toggleButton) view).isChecked();
 
@@ -42,5 +45,5 @@ public class Settings extends Activity {
         } else {
             // re-direct to login page
         }
-    }
+    }*/
 }
