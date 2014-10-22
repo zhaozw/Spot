@@ -12,28 +12,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/soundButton"
-        android:layout_marginTop="179dp"
-        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="187dp"
+        android:src="@drawable/ic_micround"
         android:onClick="addSound"
-        android:layout_marginLeft="111dp"
+        android:layout_marginLeft="73dp"
         android:background="@android:color/transparent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="3dp" />
+        android:layout_alignParentStart="true" />
     <!--camera button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/photoButton"
         android:onClick="addPhoto"
-        android:layout_alignBottom="@+id/soundButton"
-        android:layout_toRightOf="@+id/soundButton"
         android:layout_toEndOf="@+id/soundButton"
-        android:src="@drawable/ic_roundcam2"
+        android:src="@drawable/ic_camround"
         android:background="@android:color/transparent"
-        android:layout_margin="3dp" />
+        android:layout_alignTop="@+id/soundButton"
+        android:layout_alignLeft="@+id/movieButton"
+        android:layout_alignStart="@+id/movieButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
 
     <!--link button-->
     <ImageButton
@@ -41,12 +42,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/linkButton"
         android:onClick="addLink"
-        android:layout_alignBottom="@+id/photoButton"
-        android:layout_toRightOf="@+id/photoButton"
         android:layout_toEndOf="@+id/photoButton"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/ic_linkround"
         android:background="@android:color/transparent"
-        android:layout_margin="3dp" />
+        android:layout_alignTop="@+id/photoButton"
+        android:layout_toRightOf="@+id/photoButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
     <!--text button-->
     <ImageButton
         android:layout_width="wrap_content"
