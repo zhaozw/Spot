@@ -7,19 +7,48 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp" >
 <TextView
+    android:id="@+id/settingsGreetings"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Keep Anonymous"
+    android:text="Some stuff to personalize on:"
+    android:paddingBottom="10dp"
+    android:textStyle="bold"
     android:textAppearance="?android:attr/textAppearanceLarge"/>
+<TextView
+    android:id="@+id/anonymous"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Keep anonymous"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@id/settingsGreetings"/>
 <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:textOn="On"
-        android:textOff="Off"
-        android:onClick="onToggleClicked"/>
-
-
+    android:id="@+id/toggleAnonymous"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignRight="@id/anonymous"
+    android:layout_below="@id/settingsGreetings"
+    android:textOn="On"
+    android:textOff="Off"
+    android:onClick="onAnonymousClicked"/>
+<TextView
+    android:id="@+id/mute"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mute notifications"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@id/anonymous"
+    android:paddingTop="40dp"/>
+<ToggleButton
+    android:id="@+id/toggleButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toggleAnonymous"
+    android:layout_alignParentRight="true"
+    android:layout_alignRight="@id/mute"
+    android:textOn="On"
+    android:textOff="Off"
+    android:onClick="onMuteClicked"
+    android:paddingTop="10dp"/>
 
 </RelativeLayout>
