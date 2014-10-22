@@ -1,5 +1,5 @@
 <!-- Jing Zhang-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -9,19 +9,24 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/title" />
-    <EditText
-        android:layout_width="match_parent"
+        android:hint="@string/title"
+        android:paddingTop="50dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:hint="Enter your quote here" />
+        android:id="@+id/accessPhotoButton"
+        android:onClick="accessPhoto"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_camround"
+        android:background="@android:color/transparent"/>
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:text="@string/submit"
-        android:onClick="submitText"/>
+        android:onClick="submitText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/accessPhotoButton"/>
 
 
-</LinearLayout>
+</RelativeLayout>
