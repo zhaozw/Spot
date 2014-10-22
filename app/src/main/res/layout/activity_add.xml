@@ -86,4 +86,15 @@
         android:src="@drawable/ic_launcher"
         android:background="@android:color/transparent"
         android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/add_info"
+        android:id="@+id/textView"
+        android:layout_above="@+id/photoButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:textColor="#fffdf7ff" />
 </RelativeLayout>

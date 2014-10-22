@@ -21,5 +21,6 @@
     <string name="first_visitor">You are the first person to SPOT this location! Put this spot on the map:</string>
     <string name="icons_attribution">Icons designed by Cris Dobbins from the Noun Project.</string>
     <string name="icon_link">Get them here</string>
+    <string name="add_info">What would you like to share?</string>
     <string name="about">This app was developed by Sylvie Zhang and Kathy Kosinski for the University of Michigan School of Information Fall 2014 SI 543.</string>
 </resources>
