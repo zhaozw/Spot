@@ -43,7 +43,8 @@ public class MainActivity extends Activity {
             return true;
         }
         else if (id == R.id.action_about) {
-            // launch intent to go to favorites
+            Intent intent= new Intent(this, About.class);
+            startActivity(intent);
             return true;
         }
 
