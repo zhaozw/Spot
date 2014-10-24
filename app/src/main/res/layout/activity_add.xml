@@ -7,94 +7,86 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#3e453d">
 
-    <!--sound button-->
-    <ImageButton
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/soundButton"
-        android:layout_marginTop="187dp"
-        android:src="@drawable/ic_micround"
-        android:onClick="addSound"
-        android:layout_marginLeft="73dp"
-        android:background="@android:color/transparent"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <!--camera button-->
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/photoButton"
-        android:onClick="addPhoto"
-        android:layout_toEndOf="@+id/soundButton"
-        android:src="@drawable/ic_camround"
-        android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/soundButton"
-        android:layout_alignLeft="@+id/movieButton"
-        android:layout_alignStart="@+id/movieButton"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp" />
-
-    <!--link button-->
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/linkButton"
-        android:onClick="addLink"
-        android:layout_toEndOf="@+id/photoButton"
-        android:src="@drawable/ic_linkround"
-        android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/photoButton"
-        android:layout_toRightOf="@+id/photoButton"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp" />
-    <!--text button-->
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textButton"
-        android:src="@drawable/ic_launcher"
-        android:onClick="addText"
-        android:layout_below="@+id/soundButton"
-        android:layout_alignLeft="@+id/soundButton"
-        android:layout_alignStart="@+id/soundButton"
-        android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
-    <!--movie button-->
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieButton"
-        android:layout_toEndOf="@+id/soundButton"
-        android:onClick="addMovie"
-        android:src="@drawable/ic_movieround"
-        android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/quoteButton"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp" />
-    <!--quote button-->
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/quoteButton"
-        android:layout_below="@+id/linkButton"
-        android:onClick="addQuote"
-        android:layout_toRightOf="@+id/movieButton"
-        android:layout_toEndOf="@+id/movieButton"
-        android:src="@drawable/ic_launcher"
-        android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:src="@drawable/SpotLogo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/add_info"
-        android:id="@+id/textView"
-        android:layout_above="@+id/photoButton"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imageButton3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="54dp"
-        android:textColor="#fffdf7ff" />
+        android:layout_marginBottom="69dp"
+        android:textColor="#ffd6ebd1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_camround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton4"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:src="@drawable/ic_chatround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton5"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:src="@drawable/ic_linkround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton6"
+        android:layout_below="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_movieround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton7"
+        android:layout_below="@+id/imageButton3"
+        android:layout_toLeftOf="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton6"
+        android:src="@drawable/ic_penround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton8"
+        android:layout_below="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton6"
+        android:src="@drawable/ic_micround"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp" />
 </RelativeLayout>
