@@ -13,7 +13,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/SpotLogo" />
+        android:src="@drawable/spot_logo" />
 
     <TextView
         android:layout_width="wrap_content"
