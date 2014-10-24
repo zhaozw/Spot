@@ -26,6 +26,7 @@
         android:layout_marginBottom="69dp"
         android:textColor="#ffd6ebd1" />
 
+    <!--camera button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,8 +35,10 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_camround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addPhoto"/>
 
+    <!--quote button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,8 +48,10 @@
         android:layout_toStartOf="@+id/imageButton3"
         android:src="@drawable/ic_chatround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addQuote"/>
 
+    <!--link button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,8 +61,10 @@
         android:layout_toEndOf="@+id/imageButton3"
         android:src="@drawable/ic_linkround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addLink"/>
 
+    <!--movie button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,8 +73,11 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_movieround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addMovie"/>
 
+
+    <!--text button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,8 +87,11 @@
         android:layout_toStartOf="@+id/imageButton6"
         android:src="@drawable/ic_penround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addText"/>
 
+
+    <!--sound button-->
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,5 +101,6 @@
         android:layout_toEndOf="@+id/imageButton6"
         android:src="@drawable/ic_micround"
         android:background="@android:color/transparent"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:onClick="addSound"/>
 </RelativeLayout>
