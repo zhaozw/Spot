@@ -19,7 +19,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         //find GPS location
         //IF there are posts from this location, display them
-        //ELSE show "you are the first!"
+        /*  scroll view, filled with image buttons, pick up the image that is shared
+        possibly save an id with the GPS location keyed in.
+
+
+         */
+        //ELSE show default XML screen
 
     }
 
