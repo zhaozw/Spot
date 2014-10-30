@@ -52,3 +52,6 @@ public class Settings extends Activity {
   //  }
 
 }
+//alter view for background colors:
+//add button and set the color name;
+//if want to use hex color name: layout.setBackgroundColor(0xFFFFFF);
