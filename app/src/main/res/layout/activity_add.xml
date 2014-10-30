@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#3e453d">
+    android:background="#f0efd6">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -13,7 +13,8 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/spot_logo" />
+        android:src="@drawable/spot_logo"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +25,7 @@
         android:layout_above="@+id/imageButton3"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="69dp"
-        android:textColor="#ffd6ebd1" />
+        android:textColor="#412f56" />
 
     <!--camera button-->
     <ImageButton

@@ -3,7 +3,11 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+
     </style>
 
+    <style name= "AppBg">
+        <item name="android:colorBackground">#f0efd6</item>
+    </style>
 <!-- just want to add something to make it easier to find this style.xml-->
 </resources>
