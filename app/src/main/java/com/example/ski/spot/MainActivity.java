@@ -3,27 +3,55 @@ package com.example.ski.spot;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
+import android.location.LocationManager;
+import android.location.LocationListener;
+import android.location.Location;
+import android.content.Context;
 
 
 
 public class MainActivity extends Activity {
+    private LocationManager locationManager;
+    private String provider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //find GPS location
+        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+       /* private final LocationListener locationListener = new LocationListener() {
+            public void onLocationChanged(Location location) {
+                longitude = location.getLongitude();
+                latitude = location.getLatitude();
+            }
+        }
+
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
+
+
+
+
         //IF there are posts from this location, display them
         /*  scroll view, filled with image buttons, pick up the image that is shared
         possibly save an id with the GPS location keyed in.
 
 
+        if (Case_A)
+  setContentView(R.layout.layout1);
+
+else if (Case_B)
+  setContentView(R.layout.layout2);
          */
+
         //ELSE show default XML screen
 
     }
