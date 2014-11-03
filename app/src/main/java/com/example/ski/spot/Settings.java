@@ -40,16 +40,16 @@ public class Settings extends Activity {
 
     public void changeColor(View view) {
 
-        TextView t = (TextView) findViewById(R.id.settingsGreetings);
-        RelativeLayout l = (RelativeLayout) findViewById(R.id.alterLayout);
 
-        if(view.getId() == R.id.testButtonWhite){
-            t.setText("white!");
-            l.setBackgroundColor(Color.WHITE);
+        RelativeLayout l = (RelativeLayout) findViewById(R.id.layout1);
+
+        if(view.getId() == R.id.testButtonGray){
+
+            l.setBackgroundColor(Color.rgb(96,96,96));
         }
         else if(view.getId() == R.id.testButtonRed){
-            t.setText("red!");
-            l.setBackgroundColor(Color.RED);
+
+            l.setBackgroundColor(Color.rgb(128,0,0));
         }
 
     }

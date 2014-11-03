@@ -1,12 +1,12 @@
 <!-- Sylvie Zhang-->
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/alterLayout"
+    android:id="@+id/layout1"
     android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="16dp"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp" >
+        android:paddingRight="16dp"
+   >
 <TextView
     android:id="@+id/settingsGreetings"
     android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
     android:layout_below="@id/anonymous"
     android:paddingTop="40dp"/>
 <ToggleButton
-    android:id="@+id/toggleButton"
+    android:id="@+id/toggleMute"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/toggleAnonymous"
@@ -51,26 +51,37 @@
     android:textOff="Off"
     android:onClick="onMuteClicked"
     android:paddingTop="10dp"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/mute"
-        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/themeAlterView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Change your theme"
+            android:layout_below="@id/mute"
+            android:paddingTop="30dp"/>
 
         <Button
-            android:id="@+id/testButtonWhite"
+            android:id="@+id/testButtonGray"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="white"
-            android:onClick="changeColor" />
+            android:text="gray"
+            android:onClick="changeColor"
+            android:layout_below="@id/toggleMute"
+            android:layout_toRightOf="@id/themeAlterView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
 
         <Button
             android:id="@+id/testButtonRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="red"
-            android:onClick="changeColor" />
+            android:onClick="changeColor"
+            android:layout_below="@id/toggleMute"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/testButtonGray"
+            />
 
-    </LinearLayout>
 </RelativeLayout>

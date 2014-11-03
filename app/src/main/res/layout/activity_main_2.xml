@@ -45,14 +45,13 @@
             android:layout_margin="5dp"
             android:background="#ffffffff" />
 
-        <TextView
+      <!-- <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_moment"
             style="@style/TextMoment"
             android:layout_margin="5dp"
-            android:background="#ffffffff" />
-        <ImageView
+-->        <ImageView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/media_gateway"
