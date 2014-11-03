@@ -17,7 +17,8 @@
             android:src="@drawable/ic_plusround"
             android:background="@android:color/transparent"
             android:onClick="addActivity"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -59,6 +60,25 @@
             android:layout_margin="5dp"
             android:background="#ffffffff"
             android:clickable="false" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/announcement"
+            style="@style/Quote"
+            android:layout_margin="5dp"
+            android:background="#ffffffff" />
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/SIlink"
+            style="@style/Link"
+            android:layout_margin="5dp"
+            android:background="#ffffffff" />
 
     </LinearLayout>
 

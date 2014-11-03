@@ -14,7 +14,7 @@ import android.location.LocationListener;
 import android.location.Location;
 import android.content.Context;
 
-
+//TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
 public class MainActivity extends Activity {
     private LocationManager locationManager;
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         }
 
         lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
-TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
+
 
 
 
