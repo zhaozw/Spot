@@ -26,9 +26,13 @@
     <string name="about">This app was developed by Sylvie Zhang and Kathy Kosinski for the University of Michigan School of Information Fall 2014 SI 543.</string>
     <string name="moment1">August 12, 2014- We finally finished coding our Android app!!!!</string>
 <<<<<<< HEAD
-   <!-- <string name="text_moment"> " \"Bro, your treasure is so lame.\" \"Whoah bro." "My treasure is better bro. Come and see it..." "But bro it's just a mirror." "You can see my greatest treasure inside." "Bro..." "</string>-->
+<<<<<<< HEAD
+    <string name="text_moment"> " \"Bro, your treasure is so lame.\" \"Whoah bro." "My treasure is better bro. Come and see it..." "But bro it's just a mirror." "You can see my greatest treasure inside." "Bro..." "</string>
 =======
     <string name="text_moment"> \"Bro, your treasure is so lame.\" \"Whoah bro.\" \"My treasure is better bro. Come and see it...\" \"But bro it's just a mirror.\" \"You can see my greatest treasure inside.\" \"Bro...\"</string>
+=======
+    <string name="text_moment"> \"Bro, your treasure is so lame.\" \"Whoah bro.\" \"My treasure is better bro. Come and see it...\" \"But bro it\'s just a mirror.\" \"You can see my greatest treasure inside.\" \"Bro...\"</string>
+>>>>>>> FETCH_HEAD
     <string name="SIlink">This is definitely my default homepage now: <a href="https://www.si.umich.edu/">https://www.si.umich.edu/</a></string>
 
     <string name="announcement">September 4, 2014- Finally figured out how to reach the Career Development Office from 2255.</string>
