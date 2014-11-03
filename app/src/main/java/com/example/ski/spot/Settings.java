@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.graphics.Color;
 
 public class Settings extends Activity {
 
@@ -37,6 +38,21 @@ public class Settings extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void changeColor(View view) {
+
+        TextView t = (TextView) findViewById(R.id.settingsGreetings);
+        RelativeLayout l = (RelativeLayout) findViewById(R.id.alterLayout);
+
+        if(view.getId() == R.id.testButtonWhite){
+            t.setText("white!");
+            l.setBackgroundColor(Color.WHITE);
+        }
+        else if(view.getId() == R.id.testButtonRed){
+            t.setText("red!");
+            l.setBackgroundColor(Color.RED);
+        }
+
+    }
 
     //public void onToggleClicked(View view) {
 
@@ -52,6 +68,4 @@ public class Settings extends Activity {
   //  }
 
 }
-//alter view for background colors:
-//add button and set the color name;
-//if want to use hex color name: layout.setBackgroundColor(0xFFFFFF);
+
