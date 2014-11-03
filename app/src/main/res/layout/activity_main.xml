@@ -30,7 +30,8 @@
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="20dp" />
+        android:layout_margin="20dp"
+        style="@style/Quote"/>
 
     <ImageView
         android:layout_width="wrap_content"
