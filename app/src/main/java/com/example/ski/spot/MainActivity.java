@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         }
 
         lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
-
+TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
 
 
@@ -46,13 +46,13 @@ public class MainActivity extends Activity {
 
 
         if (Case_A)
-  setContentView(R.layout.layout1);
+  setContentView(R.layout.activity_main);
 
 else if (Case_B)
-  setContentView(R.layout.layout2);
+  setContentView(R.layout.activity_main_2);
          */
 
-        //ELSE show default XML screen
+
 
     }
 
