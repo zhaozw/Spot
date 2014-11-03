@@ -27,7 +27,7 @@
             android:id="@+id/textView"
             android:textColor="#412f56"
             android:textAlignment="center"
-            
+
             android:gravity="center"
             android:textStyle="bold|italic"/>
         <ImageView
