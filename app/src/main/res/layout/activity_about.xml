@@ -10,14 +10,15 @@
     tools:context="com.example.ski.spot.About"
     android:weightSum="1"
     android:orientation="vertical"
-    android:background="#3e453d">
+    android:background="#f0efd6">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/spot_logo" />
+        android:src="@drawable/spot_logo"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="292dp"
@@ -26,8 +27,8 @@
         android:text="@string/icons_attribution"
         android:id="@+id/textView"
         android:layout_weight="0.10"
-        android:layout_gravity="left"
-        android:layout_marginLeft="15dp" />
+        android:layout_marginLeft="15dp"
+        style="@style/TextMoment"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -37,7 +38,7 @@
         android:id="@+id/button"
         android:layout_weight="0.10"
         android:layout_margin="15dp"
-        android:layout_gravity="left" />
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="319dp"
@@ -51,6 +52,12 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
-        android:layout_gravity="left" />
+        android:layout_gravity="left"
+        style="@style/TextMoment"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_attribution"
+        style="@style/TextMoment"/>
 
 </LinearLayout>
