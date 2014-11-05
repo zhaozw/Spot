@@ -13,6 +13,7 @@ import android.location.LocationManager;
 import android.location.LocationListener;
 import android.location.Location;
 import android.content.Context;
+import android.app.FragmentManager;
 
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
@@ -24,18 +25,25 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       /* FragmentManager fm = getFragmentManager();
+        TestDialog testDialog = new TestDialog();
+        testDialog.setRetainInstance(true);
+        testDialog.show(fm, "fragment_name"); */
+
+
         //find GPS location
-        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+       // LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+       // Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
        /* private final LocationListener locationListener = new LocationListener() {
             public void onLocationChanged(Location location) {
                 longitude = location.getLongitude();
                 latitude = location.getLatitude();
             }
-        }
+        } */
 
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
+       // lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
 
 
 
@@ -91,4 +99,8 @@ else if (Case_B)
         startActivity(intent);
     }
 
+
+
 }
+
+

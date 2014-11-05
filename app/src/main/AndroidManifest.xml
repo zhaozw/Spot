@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ski.spot" >
-<!-- location permission:
-   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+
+    <!--
+   location permission:
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -12,15 +15,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
-
         <activity
             android:name=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -92,6 +92,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
+        </activity>
+        <activity
+            android:name=".TestDialog"
+            android:label="@string/title_activity_test_dialog"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.MainActivity" />
         </activity>
     </application>
 
