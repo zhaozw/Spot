@@ -37,19 +37,20 @@ public class Settings extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+//the code below alters the background of the settings activity
     public void changeColor(View view) {
 
-        TextView t = (TextView) findViewById(R.id.settingsGreetings);
-        RelativeLayout l = (RelativeLayout) findViewById(R.id.alterLayout);
-
-        if(view.getId() == R.id.testButtonWhite){
-            t.setText("white!");
-            l.setBackgroundColor(Color.WHITE);
+//find the relative layout of the settings activity by the ID "layout1"
+        RelativeLayout l = (RelativeLayout) findViewById(R.id.layout1);
+//if the button with id "testButtonGray" is pressed
+        if(view.getId() == R.id.testButtonGray){
+//set the background color to rgb(96,96,96) which is a dark gray
+            l.setBackgroundColor(Color.rgb(96,96,96));
         }
+//else, if the button with id "testButtonRed" is pressed
         else if(view.getId() == R.id.testButtonRed){
-            t.setText("red!");
-            l.setBackgroundColor(Color.RED);
+//set the background color to rgb(128,0,0) which is a dark red
+            l.setBackgroundColor(Color.rgb(128,0,0));
         }
 
     }
