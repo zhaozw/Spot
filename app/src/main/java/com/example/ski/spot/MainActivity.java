@@ -14,6 +14,7 @@ import android.location.LocationListener;
 import android.location.Location;
 import android.content.Context;
 import android.app.FragmentManager;
+import android.widget.Toast;
 
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
@@ -26,17 +27,51 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentManager fm = getFragmentManager();
+       /* FragmentManager fm = getFragmentManager();
         TestDialog testDialog = new TestDialog();
         testDialog.setRetainInstance(true);
         testDialog.show(fm, "TestDialog");
 
+        //Location manager to obtain gps
+        LocationManager mlocManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+
+        LocationListener mlocListener = new MyLocationListener();
+        mlocManager.requestLocationUpdates( LocationManager.GPS_PROVIDER, 0, 0, mlocListener);
 
         //find GPS location
+        public class MyLocationListener implements LocationListener {
+            @Override
+            public void onLocationChanged(Location loc) {
+                loc.getLatitude();
+                loc.getLongitude();
+            }
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras){
+            }
+        }*/
+      /* double longitude=0.0;
+       double latitude=0.0;
+
        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-       double longitude = location.getLongitude();
-       double latitude = location.getLatitude();
+         longitude = location.getLongitude();
+        latitude = location.getLatitude();
+
+       private final LocationListener locationListener = new LocationListener() {
+           public void onLocationChanged(Location location) {
+               longitude = location.getLongitude();
+               latitude = location.getLatitude();
+           }
+
+           on
+
+           @Override
+           public void onStatusChanged(String s, int i, Bundle bundle) {
+
+           }
+       }
+
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener); */
 
 
 
@@ -44,10 +79,10 @@ public class MainActivity extends Activity {
 
 
        // if [(Case_A) moments=false]
-  setContentView(R.layout.activity_main);
+  //setContentView(R.layout.activity_main);
 
        // else [(Case_B) moments=true]
-  setContentView(R.layout.activity_main_2);
+  //setContentView(R.layout.activity_main_2);
 
 
 
