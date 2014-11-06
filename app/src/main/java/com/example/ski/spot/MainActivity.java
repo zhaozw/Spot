@@ -26,39 +26,29 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       /* FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getFragmentManager();
         TestDialog testDialog = new TestDialog();
         testDialog.setRetainInstance(true);
-        testDialog.show(fm, "fragment_name"); */
+        testDialog.show(fm, "TestDialog");
 
 
         //find GPS location
-       // LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-       // Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-
-       /* private final LocationListener locationListener = new LocationListener() {
-            public void onLocationChanged(Location location) {
-                longitude = location.getLongitude();
-                latitude = location.getLatitude();
-            }
-        } */
-
-       // lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener);
-
+       LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+       Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+       double longitude = location.getLongitude();
+       double latitude = location.getLatitude();
 
 
 
         //IF there are posts from this location, display them
-        /*  scroll view, filled with image buttons, pick up the image that is shared
-        possibly save an id with the GPS location keyed in.
 
 
-        if (Case_A)
+       // if [(Case_A) moments=false]
   setContentView(R.layout.activity_main);
 
-else if (Case_B)
+       // else [(Case_B) moments=true]
   setContentView(R.layout.activity_main_2);
-         */
+
 
 
 
