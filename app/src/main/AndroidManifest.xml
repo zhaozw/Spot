@@ -90,7 +90,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
         </activity>
-
+        <activity
+            android:name=".Photo1Activity"
+            android:label="@string/title_activity_photo1"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".QuoteActivity"
+            android:label="@string/title_activity_quote"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
