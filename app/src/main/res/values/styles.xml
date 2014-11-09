@@ -32,7 +32,7 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">#412f56</item>
         <item name="android:textSize">18dp</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">left</item>
     </style>
     <style name="Caption">
         <item name="android:textColor">#412f56</item>
