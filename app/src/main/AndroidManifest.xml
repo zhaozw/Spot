@@ -26,7 +26,7 @@
             android:name=".AddText"
             android:label="@string/title_activity_add_text"
             android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -51,7 +51,7 @@
             android:name=".AddPhoto"
             android:label="@string/title_activity_add_photo"
             android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -64,7 +64,7 @@
             android:name=".AddSound"
             android:label="@string/title_activity_add_sound"
             android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -73,7 +73,7 @@
             android:name=".AddQuote"
             android:label="@string/title_activity_add_quote"
             android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -90,7 +90,7 @@
             android:name=".AddLink"
             android:label="@string/title_activity_add_link"
             android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -106,6 +106,22 @@
         <activity
             android:name=".QuoteActivity"
             android:label="@string/title_activity_quote"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Photo2Activity"
+            android:label="@string/title_activity_photo2"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ski.spot.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TextActivity"
+            android:label="@string/title_activity_text"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
