@@ -25,12 +25,14 @@
     <string name="photo_attribution">Photos taken from the University of Michigan School of Information website. si.umich.edu</string>
     <string name="about">This app was developed by Sylvie Zhang and Kathy Kosinski for the University of Michigan School of Information Fall 2014 SI 543.</string>
     <string name="moment1">August 12, 2014- We finally finished coding our Android app!!!!</string>
-    <string name="text_moment"> \"Bro, your treasure is so lame.\" \"Whoah bro.\" \"My treasure is better bro. Come and see it...\" \"But bro it\'s just a mirror.\" \"You can see my greatest treasure inside.\" \"Bro...\"</string>
+    <string name="text_moment"> \"Bro, your treasure is so lame.\" \n\"Whoah bro.\" \n\"My treasure is better bro. Come and see it...\" \n\"But bro it\'s just a mirror.\" \n\"You can see my greatest treasure inside.\" \n\"Bro...\"</string>
     <string name="SIlink">This is definitely my default homepage now: <a href="https://www.si.umich.edu/">https://www.si.umich.edu/</a></string>
     <string name="announcement">Finally figured out how to reach the Career Development Office from 2255. This is a big moment in my life.</string>
     <string name="title_activity_test_dialog">Spot</string>
     <string name="title_activity_photo1">Spot</string>
     <string name="LoremIpsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="title_activity_quote">Spot</string>
+    <string name="title_activity_photo2">Photo2Activity</string>
+    <string name="title_activity_text">TextActivity</string>
 
 </resources>
