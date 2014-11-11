@@ -15,17 +15,39 @@ import android.location.Location;
 import android.content.Context;
 import android.app.FragmentManager;
 import android.widget.Toast;
+import android.app.ListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
 
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
-public class MainActivity extends Activity {
+public class MainActivity extends ListActivity {
     private LocationManager locationManager;
     private String provider;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        // storing string resources into Array
+        String[] adobe_products = getResources().getStringArray(R.array.moments);
+
+        // Binding resources Array to ListAdapter
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.label, adobe_products));
+
+    }
+
+}
+
+
+
 
        /* FragmentManager fm = getFragmentManager();
         TestDialog testDialog = new TestDialog();
@@ -48,7 +70,7 @@ public class MainActivity extends Activity {
             @Override
             public void onStatusChanged(String provider, int status, Bundle extras){
             }
-        }*/
+        }
       /* double longitude=0.0;
        double latitude=0.0;
 
@@ -87,7 +109,7 @@ public class MainActivity extends Activity {
 
 
 
-    }
+ /* }
 
 
     @Override
@@ -126,6 +148,6 @@ public class MainActivity extends Activity {
 
 
 
-}
+} */
 
 

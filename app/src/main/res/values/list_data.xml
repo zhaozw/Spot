@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+         <string-array name="moments">
+            <item>Spotted in the Media Gateway</item>
+            <item>Ode to My Bro</item>
+            <item>Big Life Moment</item>
+            <item>Ready for the event!</item>
+        </string-array>
+
+</resources>
