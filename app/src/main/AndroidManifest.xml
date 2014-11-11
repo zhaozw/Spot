@@ -127,6 +127,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.MainActivity" />
         </activity>
+        <activity android:name=".SingleListItem"
+            android:label="Single Item Selected"></activity>
     </application>
 
 </manifest>

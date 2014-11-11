@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
 public class MainActivity extends ListActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends ListActivity {
     private String provider;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+         public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // storing string resources into Array
@@ -42,8 +43,25 @@ public class MainActivity extends ListActivity {
         // Binding resources Array to ListAdapter
         this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.label, adobe_products));
 
-    }
+        ListView lv = getListView();
 
+        // listening to single list item on click
+        lv.setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+
+                // selected item
+                String product = ((TextView) view).getText().toString();
+
+                // Launching new Activity on selecting single List Item
+                Intent i = new Intent(getApplicationContext(), SingleListItem.class);
+                // sending data to new activity
+                i.putExtra("product", product);
+                startActivity(i);
+
+            }
+        });
+    }
 }
 
 
