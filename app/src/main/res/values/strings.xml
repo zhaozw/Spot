@@ -34,5 +34,6 @@
     <string name="title_activity_quote">Spot</string>
     <string name="title_activity_photo2">Photo2Activity</string>
     <string name="title_activity_text">TextActivity</string>
+    <string name="title_activity_android_gpstracking">AndroidGPSTracking</string>
 
 </resources>

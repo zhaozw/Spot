@@ -1,4 +1,5 @@
 //Kathy Kosinski
+//gps code from:http://www.androidhive.info/2012/07/android-gps-location-manager-tutorial/
 package com.example.ski.spot;
 
 import android.app.Activity;
@@ -32,9 +33,10 @@ import android.widget.TextView;
 public class MainActivity extends ListActivity {
     private LocationManager locationManager;
     private String provider;
+    GPSTracker gps;
 
     @Override
-         public void onCreate(Bundle savedInstanceState) {
+        public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // storing string resources into Array
@@ -61,57 +63,17 @@ public class MainActivity extends ListActivity {
 
             }
         });
-    }
-}
 
-
-
-
-       /* FragmentManager fm = getFragmentManager();
-        TestDialog testDialog = new TestDialog();
-        testDialog.setRetainInstance(true);
-        testDialog.show(fm, "TestDialog");
-
-        //Location manager to obtain gps
-        LocationManager mlocManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-
-        LocationListener mlocListener = new MyLocationListener();
-        mlocManager.requestLocationUpdates( LocationManager.GPS_PROVIDER, 0, 0, mlocListener);
-
-        //find GPS location
-        public class MyLocationListener implements LocationListener {
-            @Override
-            public void onLocationChanged(Location loc) {
-                loc.getLatitude();
-                loc.getLongitude();
-            }
-            @Override
-            public void onStatusChanged(String provider, int status, Bundle extras){
-            }
+        gps = new GPSTracker(MainActivity.this);
+        if(gps.canGetLocation()){
+            double latitude = gps.getLatitude();
+            double longitude = gps.getLongitude();
         }
-      /* double longitude=0.0;
-       double latitude=0.0;
 
-       LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-       Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-         longitude = location.getLongitude();
-        latitude = location.getLatitude();
 
-       private final LocationListener locationListener = new LocationListener() {
-           public void onLocationChanged(Location location) {
-               longitude = location.getLongitude();
-               latitude = location.getLatitude();
-           }
 
-           on
+    }
 
-           @Override
-           public void onStatusChanged(String s, int i, Bundle bundle) {
-
-           }
-       }
-
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 10, locationListener); */
 
 
 
@@ -127,10 +89,12 @@ public class MainActivity extends ListActivity {
 
 
 
- /* }
+
 
 
     @Override
+
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
@@ -166,6 +130,6 @@ public class MainActivity extends ListActivity {
 
 
 
-} */
+}
 
 
