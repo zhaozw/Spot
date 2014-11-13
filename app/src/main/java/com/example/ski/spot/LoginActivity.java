@@ -11,6 +11,7 @@ import android.view.View;
 
 public class LoginActivity extends Activity {
 
+//TODO shared preferences for login activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,3 +25,7 @@ public class LoginActivity extends Activity {
 
     }
 }
+
+//SharedPreferences mySharedPreferences = getSharedPreferences(MY_PREFS,Activity.MODE_PRIVATE);
+//SharedPreferences.Editor.editor = mySharedPreferences.edit();
+//editor.apply();
