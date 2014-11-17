@@ -27,6 +27,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
 
 public class MainActivity extends ListActivity {

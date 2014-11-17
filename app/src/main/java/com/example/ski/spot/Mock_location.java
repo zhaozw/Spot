@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.content.Context;
 import android.location.LocationManager;
 import android.location.Location;
+import android.content.pm.ApplicationInfo;
 
 public class Mock_location extends Activity {
 
@@ -71,6 +72,7 @@ public class Mock_location extends Activity {
             lm.removeTestProvider(providerName);
         }
     }
+
     public class MainActivity extends Activity {
         MockLocationProvider mock;
         public void onCreate(Bundle savedInstanceState) {
@@ -115,4 +117,5 @@ public class Mock_location extends Activity {
             super.onDestroy();
         }
     }
+
 }
