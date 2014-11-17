@@ -25,11 +25,15 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+<<<<<<< HEAD
 import java.util.HashMap;
 import android.text.Html;
 import android.widget.Button;
 import android.widget.Toast;
 
+=======
+import android.location.Criteria;
+>>>>>>> FETCH_HEAD
 
 
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
@@ -74,6 +78,20 @@ public class MainActivity extends ListActivity {
             double longitude = gps.getLongitude();
         }
 
+/*  not sure whether this code works, so for now I just comment them out
+final String providerName = "MyFancyGPSProvider";
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        if (locationManager.getProvider(providerName) != null) {
+            locationManager.removeTestProvider(providerName);
+        }
+        locationManager.addTestProvider(providerName, true, false, false, false, true, true, true,
+                Criteria.POWER_LOW, Criteria.ACCURACY_FINE);
+        Location loc = new Location(providerName);
+        loc.setLongitude(13);
+        loc.setTime(System.currentTimeMillis());
+        loc.setLatitude(10);
+        locationManager.setTestProviderLocation(providerName, loc);*/
 
 
     }
