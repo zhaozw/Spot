@@ -25,6 +25,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import java.util.HashMap;
+import android.text.Html;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 
@@ -40,10 +44,10 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         // storing string resources into Array
-        String[] adobe_products = getResources().getStringArray(R.array.moments);
+        String[] moments = getResources().getStringArray(R.array.moments);
 
         // Binding resources Array to ListAdapter
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.label, adobe_products));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.label, moments));
 
         ListView lv = getListView();
 
