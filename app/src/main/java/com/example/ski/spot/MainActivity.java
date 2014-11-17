@@ -25,15 +25,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-<<<<<<< HEAD
-import java.util.HashMap;
-import android.text.Html;
-import android.widget.Button;
-import android.widget.Toast;
-
-=======
-import android.location.Criteria;
->>>>>>> FETCH_HEAD
 
 
 //TODO figure out how to enable a dummy location. then set it so you can run with the dummy location or not
