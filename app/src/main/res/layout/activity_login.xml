@@ -43,12 +43,14 @@
         android:layout_height="wrap_content"
         android:onClick="logIn"
         android:text="LOGIN"/>
+    <!--we don't know how to do the signup,
+    so we just comment it out for now
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="signUp"
-        android:text="SIGN-UP"/>
+        android:text="SIGN-UP"/>-->
 
 </LinearLayout>
 
