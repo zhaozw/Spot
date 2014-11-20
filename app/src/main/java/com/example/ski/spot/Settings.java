@@ -39,7 +39,7 @@ public class Settings extends Activity {
         // Button logout
         btnLogout = (Button) findViewById(R.id.btnLogout);
 
-        Toast.makeText(getApplicationContext(), "User Login Status: " + session.isLoggedIn(), Toast.LENGTH_LONG).show();
+
 
 
         /**
