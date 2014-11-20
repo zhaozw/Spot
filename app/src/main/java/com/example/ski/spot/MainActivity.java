@@ -36,7 +36,7 @@ public class MainActivity extends ListActivity {
     GPSTracker gps;
 
     @Override
-        public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // storing string resources into Array
@@ -65,27 +65,27 @@ public class MainActivity extends ListActivity {
         });
 
         gps = new GPSTracker(MainActivity.this);
-        if(gps.canGetLocation()){
+        if (gps.canGetLocation()) {
             double latitude = gps.getLatitude();
             double longitude = gps.getLongitude();
         }
 
 
-
     }
 
 
+    //IF there are posts from this location, display them
 
 
-        //IF there are posts from this location, display them
+  /*  if(longitude.equals(-60.0) && latitude.equals(60.0))
 
-
-       // if [(Case_A) moments=false]
-  //setContentView(R.layout.activity_main);
-
-       // else [(Case_B) moments=true]
-  //setContentView(R.layout.activity_main_2);
-
+    {
+        setContentView(R.layout.activity_main);
+    }
+    else if (longitude.equals(60.) && latitude.equals(60.0)) {
+        setContentView(R.layout.activity_main_2);
+    }
+*/
 
 
 
