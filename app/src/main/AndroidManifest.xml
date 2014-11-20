@@ -11,25 +11,22 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".AddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
         <activity
             android:name=".AddText"
             android:label="@string/title_activity_add_text"
-            android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:parentActivityName=".AddActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -41,6 +38,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" >
+
         </activity>
         <activity
             android:name=".MainActivity"
@@ -53,8 +51,7 @@
         <activity
             android:name=".AddPhoto"
             android:label="@string/title_activity_add_photo"
-            android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:parentActivityName=".AddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -66,8 +63,7 @@
         <activity
             android:name=".AddSound"
             android:label="@string/title_activity_add_sound"
-            android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:parentActivityName=".AddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -75,8 +71,7 @@
         <activity
             android:name=".AddQuote"
             android:label="@string/title_activity_add_quote"
-            android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:parentActivityName=".AddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -92,8 +87,7 @@
         <activity
             android:name=".AddLink"
             android:label="@string/title_activity_add_link"
-            android:parentActivityName=".AddActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:parentActivityName=".AddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ski.spot.AddActivity" />
@@ -133,10 +127,6 @@
         <activity
             android:name=".SingleListItem"
             android:label="Single Item Selected" />
-        <activity
-            android:name=".AndroidGPSTracking"
-            android:label="@string/title_activity_android_gpstracking" >
-        </activity>
         <activity
             android:name=".Mock_location"
             android:label="@string/title_activity_mock_location" >
