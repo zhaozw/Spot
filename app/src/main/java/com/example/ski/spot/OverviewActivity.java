@@ -43,7 +43,7 @@ public class OverviewActivity extends Activity {
 
         // adapters are what we use to associate the list variable and its contents with the list view
         ListView momentListView = (ListView) findViewById(R.id.listView);
-        SimpleAdapter simpleAdpt = new SimpleAdapter(this, momentsList, android.R.layout.simple_list_item_1, new String[] {"team"}, new int[] {android.R.id.text1});
+        SimpleAdapter simpleAdpt = new SimpleAdapter(this, momentsList, android.R.layout.simple_list_item_1, new String[] {"moment"}, new int[] {android.R.id.text1});
         momentListView.setAdapter(simpleAdpt);
 
         // setOnItemClickListener tells the activity what to do when a list item is clicked on
@@ -85,10 +85,10 @@ public class OverviewActivity extends Activity {
                 "fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in " +
                 "culpa qui officia deserunt mollit anim id est laborum.";
 
-        momentsList.add(new Moment("Uproar Labs", defaultDescription));
-        momentsList.add(new Moment("Bogus Trust", defaultDescription));
-        momentsList.add(new Moment("Gejago", defaultDescription));
-        momentsList.add(new Moment("Jagurr", defaultDescription));
+        momentsList.add(new Moment("Spotted in the Media Gateway", defaultDescription));
+        momentsList.add(new Moment("Ode to my Bro", defaultDescription));
+        momentsList.add(new Moment("Big Life Moment", defaultDescription));
+        momentsList.add(new Moment("Ready for the event!", defaultDescription));
         momentsList.add(new Moment("Raspy Puck", defaultDescription));
         momentsList.add(new Moment("Ladybug Studios", defaultDescription));
         momentsList.add(new Moment("Fourtwelve", defaultDescription));

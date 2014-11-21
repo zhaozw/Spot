@@ -117,6 +117,11 @@ public class MainActivity extends ListActivity {
             startActivity(intent);
             return true;
         }
+        else if (id==R.id.action_add){
+            Intent intent= new Intent(this, AddActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
