@@ -25,7 +25,11 @@
         </activity>
         <activity
             android:name=".AddActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.ski.spot.MainActivity" />
         </activity>
         <activity
             android:name=".AddText"
