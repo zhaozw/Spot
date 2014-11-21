@@ -7,6 +7,11 @@
         android:orderInCategory="100"
         android:icon="@android:drawable/ic_menu_preferences"
         android:showAsAction="always" />
+    <item android:id="@+id/action_add"
+        android:title="Add"
+        android:icon="@drawable/ic_plusround"
+        android:showAsAction="always"
+        />
     <item android:id="@+id/action_about"
         android:title="About"
         android:icon="@android:drawable/ic_menu_info_details"
