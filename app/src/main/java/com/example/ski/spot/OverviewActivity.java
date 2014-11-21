@@ -134,14 +134,14 @@ public class OverviewActivity extends Activity {
             // launch intent to go to settings screen
             return true;
         }
-        else if (id == R.id.action_logout) {
+       /* else if (id == R.id.action_logout) {
             // launch intent to log out the user (that then sends user back to login activity)
             return true;
         }
         else if (id == R.id.action_add_moment) {
             addMoment();
             return true;
-        }
+        } */
 
         return super.onOptionsItemSelected(item);
     }
@@ -150,12 +150,12 @@ public class OverviewActivity extends Activity {
     // onCreateContextMenu associates the context menu found in the menu resources folder with this
     // activity
 
-    @Override
+   /* @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.context_menu, menu);
-    }
+    } */
 
     // onContextItemSelected tells the activity what to do when a menu item in the context menu is
     // clicked on
@@ -167,7 +167,7 @@ public class OverviewActivity extends Activity {
 
         int id = item.getItemId();
 
-        if (id == R.id.action_favorite) {
+       /* if (id == R.id.action_favorite) {
             // message that this one is in favorites
             // proceed to add to favorites
             return true;
@@ -176,15 +176,15 @@ public class OverviewActivity extends Activity {
             // initiate an intent to send user to contact activity with this team's email as the
             // data
             return true;
-        }
+        } */
 
         return super.onContextItemSelected(item);
 
     }
 
-    public void addMoment() {
+   /* public void addMoment() {
         Intent intent = new Intent(this, AddMomentActivity.class);
         startActivity(intent);
-    }
+    } */
 
 }
