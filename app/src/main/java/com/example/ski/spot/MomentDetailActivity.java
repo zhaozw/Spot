@@ -33,7 +33,7 @@ public class MomentDetailActivity extends Activity {
         momentId = (int) Long.parseLong(message);
 
         // Create the text view
-        TextView textView = (TextView) findViewById(R.id.textView_momentname);
+        TextView textView = (TextView) findViewById(R.id.textView_momentName);
         textView.setText(momentsList.get(momentId).getName());
 
         // Just to demonstrate, the following two lines grab a rating bar element and set its value
@@ -118,14 +118,14 @@ public class MomentDetailActivity extends Activity {
             // launch intent to settings screen
             return true;
         }
-        else if (id == R.id.action_logout) {
+      /*  else if (id == R.id.action_logout) {
             // launch intent to settings screen
             return true;
         }
         else if (id == R.id.action_delete_moment) {
             deleteMomentDialog();
             return true;
-        }
+        } */
         return super.onOptionsItemSelected(item);
     }
 

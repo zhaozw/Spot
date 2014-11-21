@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Team N"
-            android:id="@+id/textView_teamname"
+            android:id="@+id/textView_momentName"
             android:textSize="24dp"
             android:padding="15dp"
             android:textStyle="bold"/>
