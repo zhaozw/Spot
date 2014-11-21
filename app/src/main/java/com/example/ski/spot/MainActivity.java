@@ -1,5 +1,5 @@
 package com.example.ski.spot;
-//adapter code modified from https://github.com/aboudalia/Teamivore
+//adapter code modified from Amine Boudalia's: https://github.com/aboudalia/Teamivore
 //Thanks Amine! You're the best!
 import android.app.Activity;
 import android.content.Intent;
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overview);
+        setContentView(R.layout.activity_main);
 
         initData();
 

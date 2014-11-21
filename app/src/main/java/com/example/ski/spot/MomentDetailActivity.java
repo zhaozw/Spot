@@ -1,4 +1,5 @@
 package com.example.ski.spot;
+//code modified from Amine Boudalia's: https://github.com/aboudalia/Teamivore
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -28,7 +29,7 @@ public class MomentDetailActivity extends Activity {
 
         // Get the message from the intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(OverviewActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         momentId = (int) Long.parseLong(message);
 
@@ -101,7 +102,7 @@ public class MomentDetailActivity extends Activity {
         SharedPreferencesUtility.putMomentList(this, "moments", momentsList);
         Toast.makeText(getApplicationContext(), "Moment has been deleted!", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this, OverviewActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
         finish();

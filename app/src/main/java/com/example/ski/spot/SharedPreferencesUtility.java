@@ -2,6 +2,8 @@ package com.example.ski.spot;
 
 /**
  * Created by kathy on 11/20/14.
+ *
+ * code modified from Amine Boudalia: https://github.com/aboudalia/Teamivore
  */
 import android.app.Activity;
 import android.content.SharedPreferences;
