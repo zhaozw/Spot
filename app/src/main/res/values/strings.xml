@@ -38,6 +38,6 @@
     <string name="title_activity_mock_location">MockLocation</string>
     <string name="title_single_list_item_view">Moment</string>
     <string name="title_activity_overview">OverviewActivity</string>
-    <string name="title_activity_moment_detail">MomentDetailActivity</string>
+    <string name="title_activity_moment_detail">A Special Moment...</string>
 
 </resources>
