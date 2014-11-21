@@ -74,16 +74,7 @@ public class OverviewActivity extends Activity {
 
     private void initData() {
 
-        /*List<String> teamsList = new ArrayList<String>();
-        teamsList.add("Team 1: Uproar Labs");
-        teamsList.add("Team 2: Bogus Trust");
-        teamsList.add("Team 3: Gejago");
-        teamsList.add("Team 4: Jagurr");
-        teamsList.add("Team 5: Raspy Puck");
-        teamsList.add("Team 6: Ladybug Studios");
-        teamsList.add("Team 7: Fourtwelve");
-        SharedPreferencesUtility.putStringList(this, "teams", teamsList);
-        */
+
 
         List<Moment> momentsList = new ArrayList<Moment>();
 
